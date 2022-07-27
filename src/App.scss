@@ -1,0 +1,40 @@
+@use "ui/constants";
+
+* {
+  box-sizing: border-box;
+  font-family: "Kaushan Script", cursive;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh;
+  background: constants.$purple-gradient;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1410px;
+  height: 1010px;
+  margin: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  box-shadow: constants.$container-shadow;
+  background: constants.$dark-gradient;
+
+  @media screen and (max-width: 768px) {
+    width: 95%;
+    height: 100%;
+  }
+}
